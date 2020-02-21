@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.digi_diary.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+
+        <action
+            android:id="@+id/action_splash_to_home"
+            app:destination="@+id/homeFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.digi_diary.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.digi_diary.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/newDiaryFragment"
+        android:name="com.example.digi_diary.NewDiaryFragment"
+        android:label="fragment_new_diary"
+        tools:layout="@layout/fragment_new_diary" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.digi_diary.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.digi_diary.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/binFragment"
+        android:name="com.example.digi_diary.BinFragment"
+        android:label="fragment_bin"
+        tools:layout="@layout/fragment_bin" />
+    <fragment
+        android:id="@+id/diaryDetailsFragment"
+        android:name="com.example.digi_diary.DiaryDetailsFragment"
+        android:label="fragment_diary_details"
+        tools:layout="@layout/fragment_diary_details" />
+    <fragment
+        android:id="@+id/diaryEditFragment"
+        android:name="com.example.digi_diary.DiaryEditFragment"
+        android:label="fragment_diary_edit"
+        tools:layout="@layout/fragment_diary_edit" />
+</navigation>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Digi-Diary</string>
+
+
+    <string name="home_item">home</string>
+    <string name="favourites_item">favourites</string>
+    <string name="calendar_item">calendar</string>
+    <string name="settings_item">settings</string>
+    <string name="compose_diary">compose</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorites">favorites</string>
+
+</resources>

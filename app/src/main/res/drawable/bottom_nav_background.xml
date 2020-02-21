@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/compose_button_fab_app_a"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="@dimen/fab_dimen"
+        android:layout_height="@dimen/fab_dimen"
+        android:layout_gravity="center_horizontal|center_vertical"
+         >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</selector>
