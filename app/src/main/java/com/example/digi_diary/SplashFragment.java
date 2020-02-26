@@ -14,8 +14,11 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import static com.example.digi_diary.AppActivity.sqlLiteHelper;
 
 
 public class SplashFragment extends Fragment {
@@ -34,15 +37,25 @@ public class SplashFragment extends Fragment {
         BottomNavigationView navbar =getActivity().findViewById(R.id.bottm_nav_bar);
         navbar.setVisibility(view.GONE);
 
+        sqlLiteHelper = new SqlLiteHelper(getActivity(),"DiaresDB",null ,1);
+        try {
+            sqlLiteHelper.createTable();
+            Toast.makeText(getActivity(),"database created",Toast.LENGTH_LONG).show();
+            Handler handler=new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    NavDirections action =
+                            SplashFragmentDirections.actionSplashToHome();
+                    Navigation.findNavController(view).navigate(action);
+                }
+            },1500);
 
-        Handler handler=new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                NavDirections action =
-                        SplashFragmentDirections.actionSplashToHome();
-                Navigation.findNavController(view).navigate(action);
-            }
-        },1500);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+
+
     }
 }

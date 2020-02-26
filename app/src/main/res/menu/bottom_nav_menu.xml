@@ -13,7 +13,7 @@
         android:id="@+id/composeMenuItem"
         android:checked="false"
         android:enabled="true"
-        android:icon="@drawable/ic_heart"
+        android:icon="@drawable/ic_plus"
         android:title="@string/compose_diary"/>
     <item
         android:id="@+id/calendarFragment"

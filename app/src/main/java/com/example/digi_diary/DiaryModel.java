@@ -1,3 +1,5 @@
+package com.example.digi_diary;
+
 public class DiaryModel {
 
     private int localdiary_id;

@@ -11,5 +11,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="favorites">favorites</string>
+    <string name="friday_august_30th_2020">friday, August 30th,2020</string>
+    <string name="write_your_diary_here">write your diary here</string>
 
 </resources>
