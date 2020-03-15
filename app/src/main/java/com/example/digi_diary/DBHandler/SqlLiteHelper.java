@@ -1,4 +1,4 @@
-package com.example.digi_diary;
+package com.example.digi_diary.DBHandler;
 
 import android.content.Context;
 import android.database.Cursor;

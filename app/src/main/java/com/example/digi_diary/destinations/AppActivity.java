@@ -1,4 +1,4 @@
-package com.example.digi_diary;
+package com.example.digi_diary.destinations;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
@@ -7,12 +7,18 @@ import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.digi_diary.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.List;
+
+import com.example.digi_diary.DBHandler.SqlLiteHelper;
+import com.example.digi_diary.Adapters.Models.DiaryModel;
+
 public class AppActivity extends AppCompatActivity {
     FloatingActionButton compose_button;
-
+    public static List<DiaryModel> diaries;
     public static SqlLiteHelper sqlLiteHelper ;
 
 
@@ -32,8 +38,6 @@ public class AppActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 navHostFragment.getNavController().navigate(R.id.action_splash_to_add_new_diary);
-
-
             }
         });
 

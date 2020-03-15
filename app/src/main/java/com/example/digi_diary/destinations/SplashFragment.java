@@ -1,7 +1,5 @@
-package com.example.digi_diary;
+package com.example.digi_diary.destinations;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,9 +14,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.digi_diary.R;
+//import com.example.digi_diary.SplashFragmentDirections;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.digi_diary.AppActivity.sqlLiteHelper;
+import com.example.digi_diary.DBHandler.SqlLiteHelper;
+
+import static com.example.digi_diary.destinations.AppActivity.sqlLiteHelper;
 
 
 public class SplashFragment extends Fragment {
@@ -29,6 +31,7 @@ public class SplashFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash, container, false);
+
     }
 
     @Override

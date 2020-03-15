@@ -1,7 +1,5 @@
-package com.example.digi_diary;
+package com.example.digi_diary.destinations;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,21 +10,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.digi_diary.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-public class DiaryEditFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_diary_edit, container, false);
+        return inflater.inflate(R.layout.fragment_settings, container, false);
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         BottomNavigationView navbar =getActivity().findViewById(R.id.bottm_nav_bar);
-        navbar.setVisibility(view.GONE);
+        navbar.setVisibility(view.VISIBLE);
     }
 }

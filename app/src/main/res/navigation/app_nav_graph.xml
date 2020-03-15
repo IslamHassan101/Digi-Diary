@@ -8,11 +8,13 @@
 
     <action
         android:id="@+id/action_splash_to_add_new_diary"
-        app:destination="@+id/newDiaryFragment"/>
+        app:destination="@+id/newDiaryFragment"
+        app:popUpTo="@layout/fragment_home"
+        app:popUpToInclusive="true"/>
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.digi_diary.SplashFragment"
+        android:name="com.example.digi_diary.destinations.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
 
@@ -24,42 +26,42 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.digi_diary.HomeFragment"
+        android:name="com.example.digi_diary.destinations.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.example.digi_diary.FavoritesFragment"
+        android:name="com.example.digi_diary.destinations.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/newDiaryFragment"
-        android:name="com.example.digi_diary.NewDiaryFragment"
+        android:name="com.example.digi_diary.destinations.NewDiaryFragment"
         android:label="fragment_new_diary"
         tools:layout="@layout/fragment_new_diary" />
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.example.digi_diary.CalenderFragment"
+        android:name="com.example.digi_diary.destinations.CalenderFragment"
         android:label="fragment_calender"
         tools:layout="@layout/fragment_calender" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.digi_diary.SettingsFragment"
+        android:name="com.example.digi_diary.destinations.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/binFragment"
-        android:name="com.example.digi_diary.BinFragment"
+        android:name="com.example.digi_diary.destinations.BinFragment"
         android:label="fragment_bin"
         tools:layout="@layout/fragment_bin" />
     <fragment
         android:id="@+id/diaryDetailsFragment"
-        android:name="com.example.digi_diary.DiaryDetailsFragment"
+        android:name="com.example.digi_diary.destinations.DiaryDetailsFragment"
         android:label="fragment_diary_details"
         tools:layout="@layout/fragment_diary_details" />
     <fragment
         android:id="@+id/diaryEditFragment"
-        android:name="com.example.digi_diary.DiaryEditFragment"
+        android:name="com.example.digi_diary.destinations.DiaryEditFragment"
         android:label="fragment_diary_edit"
         tools:layout="@layout/fragment_diary_edit" />
 </navigation>

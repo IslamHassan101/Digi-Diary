@@ -1,4 +1,4 @@
-package com.example.digi_diary;
+package com.example.digi_diary.Models;
 
 public class DiaryModel {
 
